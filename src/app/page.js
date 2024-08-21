@@ -133,7 +133,7 @@ export default function Home() {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
-  const [currentStep, setCurrentStep] = useState("Document");
+  const [currentStep, setCurrentStep] = useState("Ownership");
   const [isCheckboxCheck, setIsCheckboxCheck] = useState(false);
   const [selectedDocType, setSelectedDocType] = useState([
     {
@@ -284,7 +284,7 @@ export default function Home() {
               className="file:bg-blue-200 file:rounded-xl file:border-none file:px-2 file:py-1 file:text-sm file:outline-none file:text-blue-500 file:mr-10"
               multiple
             />
-            <button className="text-white bg-sky-800 rounded px-2 py-1">
+            <button className="text-white bg-sky-800 rounded px-2 py-1" onClick={(e) => e.preventDefault()}>
               Upload
             </button>
           </div>
@@ -299,7 +299,7 @@ export default function Home() {
               className="file:bg-blue-200 file:rounded-xl file:border-none file:px-2 file:py-1 file:text-sm file:outline-none file:text-blue-500 file:mr-10"
               multiple
             />
-            <button className="text-white bg-sky-800 rounded px-2 py-1">
+            <button className="text-white bg-sky-800 rounded px-2 py-1" onClick={(e) => e.preventDefault()}>
               Upload
             </button>
           </div>
@@ -314,7 +314,7 @@ export default function Home() {
               className="file:bg-blue-200 file:rounded-xl file:border-none file:px-2 file:py-1 file:text-sm file:outline-none file:text-blue-500 file:mr-10"
               multiple
             />
-            <button className="text-white bg-sky-800 rounded px-2 py-1">
+            <button className="text-white bg-sky-800 rounded px-2 py-1" onClick={(e) => e.preventDefault()}>
               Upload
             </button>
           </div>
@@ -332,7 +332,7 @@ export default function Home() {
                     className="file:bg-blue-200 file:rounded-xl file:border-none file:px-2 file:py-1 file:text-sm file:outline-none file:text-blue-500 file:mr-10"
                     multiple
                   />
-                  <button className="text-white bg-sky-800 rounded px-2 py-1">
+                  <button className="text-white bg-sky-800 rounded px-2 py-1" onClick={(e) => e.preventDefault()}>
                     Upload
                   </button>
                 </div>
